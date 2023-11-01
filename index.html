@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
 </head>
 <body>
+    <h1>Choose your option</h1>
+    <p><strong>Game play: </strong>Choose your option and play against computer until any player reaches score of 5.</p>
+    <div class="container">
+        <p id="playerScore"></p>
+        <p id="computerScore"></p>
+    </div>
+    <div class="container">
+        <div><button class="rock" onclick="game(this)">Rock</button></div>
+        <div><button class="paper" onclick="game(this)">Paper</button></div>
+        <div><button class="scissor" onclick="game(this)">Scissor</button></div>
+        <button onclick="cleanUp()">Reset Game</button>
+    </div>
+    
     <script src="./javascript.js"></script>
 </body>
 </html>
